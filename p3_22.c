@@ -6,9 +6,9 @@ int main( void )
    printf( "%s", "Enter an integer: " );
    scanf( "%d", &n );
 
-   int isPrime = ( n > 1 ); // numbers <= 1 are not prime
+   int isPrime = ( n > 1 ); 
    int i = 2;
-   while ( isPrime && i * i <= n ) { // only need to test up to sqrt(n)
+   while ( isPrime && i * i <= n ) { 
       if ( n % i == 0 ) {
          isPrime = 0;
       }
